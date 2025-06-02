@@ -1,0 +1,171 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUXXHAT STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #858584;
+            color: #4f4f4f;
+        }
+        .header {
+            background-color: #ffffff; /* Putih */
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #353433; /* Abu abu */
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .navbar a:hover {
+            color: #000000; /* Hitam */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1 1 20%;
+            background-color: #353433; /* Abu abu */
+            padding: 15px;
+            text-align: center;
+            color: #ffffff; /* Putih */
+            border-radius: 8px;
+        }
+        .main-content {
+            flex: 1 1 60%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .main-content marquee {
+            color: #000000; /* Hitam */
+        }
+        .main-content h2 {
+            color: black;
+        }
+        .main-content .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .main-content .product img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content .product .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+        .main-content .product .info p {
+            margin: 10px 0;
+        }
+        .main-content .product .info a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .main-content .product .info a:hover {
+            color: #000000;
+        }
+        .footer {
+            background-color: #353535; /* Abu abu */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div style="background-color: #ffffff; color: black; padding: 20px; text-align: center; font-size: 24px; font-weight: bold;">
+        WELCOME TO BUXXHAT STORE
+    </div>
+
+    <div style="background-color: #353433; padding: 10px; text-align: center;">
+        <a href="Halaman1.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+        <a href="Halaman2.html" style="color: white; margin: 0 15px; text-decoration: none;">Transaction</a>
+        <a href="Halaman3.html" style="color: white; margin: 0 15px; text-decoration: none;">About Us</a>
+    </div>
+
+    <table width="100%" cellpadding="20">
+        <tr>
+            <!-- Main Content (kiri) -->
+            <td width="75%" valign="top" style="background-color: white;">
+                <marquee>Welcome to BUXXHAT STORE!</marquee>
+                <h2>Product List</h2>
+            
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    <!-- Bucket Hat -->
+                    <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                        <img src="Topi1.webp" alt="Bucket Hat" style="width: 100%; border-radius: 8px;">
+                        <h3 style="margin: 10px 0 5px;">Bucket Hat</h3>
+                        <p style="margin: 5px 0;">Rp100.000</p>
+                        <a href="Halaman2.html" style="text-decoration: none; color: #000000; font-weight: bold;">Buy</a>
+                    </div>
+            
+                    <!-- Snapback Hat -->
+                    <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                        <img src="Topi2.jpg" alt="Snapback Hat" style="width: 100%; border-radius: 8px;">
+                        <h3 style="margin: 10px 0 5px;">Snapback Hat</h3>
+                        <p style="margin: 5px 0;">Rp200.000</p>
+                        <a href="Halaman2.html" style="text-decoration: none; color: #000000; font-weight: bold;">Buy</a>
+                    </div>
+            
+                    <!-- Baseball Cap -->
+                    <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                        <img src="Topi3.jpg" alt="Baseball Cap" style="width: 100%; border-radius: 8px;">
+                        <h3 style="margin: 10px 0 5px;">Baseball Cap</h3>
+                        <p style="margin: 5px 0;">Rp300.000</p>
+                        <a href="Halaman2.html" style="text-decoration: none; color: #000000; font-weight: bold;">Buy</a>
+                    </div>
+                </div>
+            </td>
+
+            <!-- Sidebar (kanan) -->
+            <td width="25%" valign="top" style="background-color: #353433; color: white; border-radius: 8px;">
+                <p><strong>ABOUT MY BRAND</strong></p>
+                <p>HIGH QUALITY PRODUCT & BETTER THAN OTHER!!!</p>
+                <p>RINGAN, ADEM, DAN JELAS MURAH!!!</p>
+                <hr>
+                <p>Contact Person: <br> +62 998 0234 5872</p>
+            </td>
+        </tr>
+    </table>
+
+    <div style="background-color: #353535; color: white; padding: 15px; text-align: center;">
+        © 2025 BUXXHAT STORE - All Rights Reserved
+    </div>
+
+</body>
+</html>
